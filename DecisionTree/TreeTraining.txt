@@ -1,0 +1,2 @@
+democrat,y,y,y,y
+republican,n,n,n,n

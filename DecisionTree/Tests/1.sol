@@ -1,0 +1,17 @@
+democrat,1.0
+republican,1.0
+republican,1.0
+republican,1.0
+republican,1.0
+republican,1.0
+republican,1.0
+republican,1.0
+republican,1.0
+republican,1.0
+republican,1.0
+republican,1.0
+republican,1.0
+republican,1.0
+republican,1.0
+republican,1.0
+republican,1.0

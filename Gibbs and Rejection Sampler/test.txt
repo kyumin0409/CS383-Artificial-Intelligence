@@ -1,0 +1,4 @@
+[["Cloudy", [], [0.5]],
+["Sprinkler", ["Cloudy"], [0.1, 0.5]],
+["Rain", ["Cloudy"], [0.8, 0.2]],
+["WetGrass", ["Sprinkler", "Rain"], [0.99, 0.9, 0.9, 0.0]]]

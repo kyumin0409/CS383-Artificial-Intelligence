@@ -1,0 +1,39 @@
+    def fillTree(self, depth, temp, node):
+        #fills empty nodes and zeroes
+        self.count += 1
+
+        if self.depth == depth:
+            temp = []
+            return
+        else:
+            if node.left == None:
+                node.left = TreeNode(self.instances)
+                if depth+1 == self.depth:
+                    temp.append('y')
+                    node.left.path.extend(temp)
+                    temp.pop()
+            temp.append('y')
+            self.fillTree(depth+1, temp, node.left)
+            temp.pop()
+
+            if node.right == None:
+                node.right = TreeNode(self.instances)
+                if depth+1 == self.depth:
+                    temp.append('n')
+                    node.right.path.extend(temp)
+                    temp.pop()
+            temp.append('n')
+            self.fillTree(depth+1, temp, node.right)
+            temp.pop()
+
+    def printTree(self, node, depth):
+        if node.right == None and node.left == None:
+            return
+        else:
+            if node.right != None:
+                print (4 - (depth + 1)) * "  ", node.right.leafDictionary
+                self.printTree(node.right, depth+1)
+            if node.left != None:
+                print depth * "  ", node.left.leafDictionary
+                self.printTree(node.left, depth+1)
+                                         
